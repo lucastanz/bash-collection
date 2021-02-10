@@ -1,0 +1,2 @@
+# prints 15 (1+2+3+4+5)
+seq 5 | awk '{s+=$1} END {print s}' 
