@@ -1,0 +1,7 @@
+NR==1 {
+    for (i=1; i<=NF; i++) {
+        f[$i] = i
+    }
+}
+{ if ($(f["column_name_1"]) == 0) { print $(f["column_name_5"]) } }
+' file.csv > file_filtered.csv
